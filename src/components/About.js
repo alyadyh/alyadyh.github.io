@@ -17,12 +17,12 @@ const About = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}} 
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[500px] mix-blend-lighten bg-top'>
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[150px] lg:h-[500px] mix-blend-lighten bg-top'>
           </motion.div>
           <div className='flex-1'>
-            <h2 className='h2 text-accent'>About Me.</h2>
-            <h3 className='h3 mb-4'>I'm a 5th semester Computer Science student who passionate in web development.</h3>
-            <p className='mb-6'>Lorem ipsum</p>
+            <h2 className='h2 font-semibold text-accent'>About Me.</h2>
+            <h5 className='h5 text-[14px] lg:text-[18px] mb-4 font-secondary font-light'>I'm a 5th semester Computer Science student who passionate in web development.</h5>
+            <p className='mb-8'></p>
 
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
@@ -54,7 +54,7 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Download my CV</button>
+              <button className='btn btn-lg'>Download my Resume</button>
             </div>
           </div>
         </div>

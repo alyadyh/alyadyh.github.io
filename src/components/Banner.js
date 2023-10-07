@@ -9,15 +9,19 @@ const Banner = () => {
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh]' id='home'>
       <div className='container mx-auto mt-4'>
-        <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-20'>
+        <div className='flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-20'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
+            <motion.p variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
+            className='text-[18px] font-quartenary text-accent mb-8 max-w-lg mx-auto lg:mx-0'>
+              Hello, World! My name is
+            </motion.p>
             <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} 
-            className='text-[55px] font-bold leading-[0.8] lg:text-[100px]'>
+            className='mb-6 text-[40px] font-bold leading-[0.8] lg:text-[70px]'>
               ALYA <span>DHIYA'</span>
             </motion.h1>
             <motion.div variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }}
-            className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+            className='mb-8 text-[25px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation 
                 sequence={[
@@ -27,14 +31,18 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className='text-accent'
+                className='text-gradient'
                 wrapper='span'
                 repeat={Infinity}
                 />
             </motion.div>
             <motion.p variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
-            className='text-[18px] mb-8 max-w-lg mx-auto lg:mx-0'>
-              Currently an undergraduate student majoring in Computer Science at Bina Nusantara University. Interested in Web Development, Agile Project Management, and UI/UX. 
+            className='text-[16px] lg:text-[16px] font-tertiary mb-4 max-w-3xl mx-auto lg:mx-0'>
+              I love exploring new things!
+           </motion.p>
+            <motion.p variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
+            className='text-[14px] lg:text-[16px] font-tertiary mb-8 max-w-3xl mx-auto lg:mx-0'>
+              Currently working as Full-stack Developer Project-based Intern at <span className='text-accent'>BTPN Syariah</span>, also a full-time Computer Science student at <span className='text-accent'>Bina Nusantara University</span>. Interested in Web Development, Project Management, and UI/UX. 
             </motion.p>
             <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
