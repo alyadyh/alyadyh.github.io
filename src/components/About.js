@@ -1,5 +1,10 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import HTMLpdf from '../assets/files/Skilvul-SkilBadge-HTML-Dasar.pdf';
+import CSSpdf from '../assets/files/Skilvul-SkilBadge-CSS-Dasar.pdf';
+import JSpdf from '../assets/files/Skilvul-SkilBadge-JavaScript-Dasar.pdf';
+import dotNETpdf from '../assets/files/dotNET-Full-Stack-Foundation.pdf';
+import { BsArrowUpRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -55,6 +60,29 @@ const About = () => {
             </div>
             <div className='flex gap-x-8 items-center'>
               <button className='btn btn-lg'>Download my Resume</button>
+            </div>
+          </div>
+        </div>
+        <div className='flex flex-col lg:flex-row'>
+          <div className='flex-1 mb-12 lg:mb-0'>
+            <h2 className='h2 text-accent mb-6'>My Certifications</h2>
+            <div className='flex text-[25px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-16'>
+              <a href='#' className='text-gradient btn-link'>HTML</a>
+              <a href={HTMLpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
+                  <BsArrowUpRight />
+              </a>
+              <a href='#' className='text-gradient btn-link'>CSS</a>
+              <a href={CSSpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
+                  <BsArrowUpRight />
+              </a>
+              <a href='#' className='text-gradient btn-link'>JavaScript</a>
+              <a href={JSpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
+                  <BsArrowUpRight />
+              </a>
+              <a href='#' className='text-gradient btn-link'>.NET Full-Stack Foundation</a>
+              <a href={dotNETpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
+                  <BsArrowUpRight />
+              </a>
             </div>
           </div>
         </div>
