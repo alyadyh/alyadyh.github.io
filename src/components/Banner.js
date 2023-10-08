@@ -51,9 +51,9 @@ const Banner = () => {
             </motion.div>
             <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
             className='flex text-[25px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='https://linkedin.com/in/alya-mardhiyyah/'><FaLinkedin/></a>
-              <a href='https://github.com/alyadyh/'><FaGithub/></a>
-              <a href='https:///instagram.com/alyadya_'><FaInstagram/></a>
+              <a href='https://linkedin.com/in/alya-mardhiyyah/' target="_blank"><FaLinkedin/></a>
+              <a href='https://github.com/alyadyh/' target="_blank"><FaGithub/></a>
+              <a href='https:///instagram.com/alyadya_' target="_blank"><FaInstagram/></a>
             </motion.div>
           </div>
           {/* image */}
