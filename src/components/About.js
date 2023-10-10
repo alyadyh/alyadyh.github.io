@@ -22,7 +22,7 @@ const About = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}} 
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[150px] lg:h-[500px] mix-blend-lighten bg-top'>
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[200px] lg:h-[500px] mix-blend-lighten bg-top'>
           </motion.div>
           <div className='flex-1'>
             <h2 className='h2 font-semibold text-accent'>About Me.</h2>
@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className='flex flex-col lg:flex-row mt-18 mb-32'>
+        <div className='flex flex-col lg:flex-row mt-32 mb-32'>
           <div className='flex-1 mb-12 lg:mb-0'>
             <h2 className='h2 text-accent font-semibold mb-12'>My Certifications</h2>
             <div className='flex flex-col lg:flex-row text-[25px] gap-y-8 max-w-max mx-auto lg:mx-0 mb-28'>
