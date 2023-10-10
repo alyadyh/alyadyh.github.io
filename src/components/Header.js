@@ -11,7 +11,7 @@ const Header = () => {
             <img src={Logo} alt=''/>
           </a>
 
-          <button className='btn btn-sm'>Resume</button>
+          <button className='btn btn-sm'>CV</button>
         </div>
       </div>
     </header>
