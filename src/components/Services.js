@@ -16,7 +16,7 @@ const servicee = [
   {
     name: 'Bina Nusantara Computer Club',
     description: 'As Public Relations Staff, I work with 7 people on the same team and responsible for content creation and publicity material utilizing Figma and Canva.',
-    link: 'https://bncc.net/',
+    link: 'https:///instagram.com/bnccmalang',
     date: 'Oct 2021 - Present',
   },
 ];
@@ -26,9 +26,9 @@ const Services = () => {
     <section className='section' id='services'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
-          <div className='flex-1 mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent mb-6'>My Experiences</h2>
-            {/* <h3 className='h3 max-w-[455px] mb-8'>I'm a passionate Web Developer</h3> */}
+          <div className='flex-1 mb-8 lg:mb-0'>
+            <h2 className='h2 text-accent font-semibold mb-6'>My Experiences</h2>
+            <p className='max-w-[455px] mb-8'>Here is my professional experience.</p>
           </div>
           <motion.div variants={fadeIn('left', 0.3)}
           initial="hidden"
@@ -39,7 +39,7 @@ const Services = () => {
               {servicee.map((service, index) => {
                 const { name, description, link, date } = service;
                 return (
-                  <div className='border-b border-white/20 h-[146px] mb-[40px] flex' key={index}>
+                  <div className='flex border-b border-white/20 h-[185px] mb-8' key={index}>
                     <div className='max-w-[476px]'>
                       <h4 className='text-[20px] tracking-wider font-secondary font-semibold mb-6'>{name}</h4>
                       <p className='text-[14px] lg:text-[16px] mb-6 font-secondary font-light leading-tight'>{description}</p>
