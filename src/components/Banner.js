@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from '../assets/avatar.svg';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
     <section className='min-h-[85vh] lg:min-h-[78vh]' id='home'>
-      <div className='container mx-auto mt-4'>
+      <div className='container mx-auto mt-4 mb-24'>
         <div className='flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-20'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -46,14 +46,10 @@ const Banner = () => {
             </motion.p>
             <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>My Portfolio</a>
-            </motion.div>
-            <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{once: false, amount: 0.7 }}
-            className='flex text-[25px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='https://linkedin.com/in/alya-mardhiyyah/' target="_blank"><FaLinkedin/></a>
-              <a href='https://github.com/alyadyh/' target="_blank"><FaGithub/></a>
-              <a href='https:///instagram.com/alyadya_' target="_blank"><FaInstagram/></a>
+              <Link to='contact' smooth={true} spy={true} className='cursor-pointer'>
+                <button className='btn btn-lg'>Contact me</button>
+              </Link>
+              {/* <a href='#' className='text-gradient btn-link'>My Portfolio</a> */}
             </motion.div>
           </div>
           {/* image */}
