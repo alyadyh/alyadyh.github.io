@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.abb9315c.css",
-    "main.js": "/static/js/main.57180fc7.js",
+    "main.css": "/static/css/main.3f66e6ca.css",
+    "main.js": "/static/js/main.dadc2ffc.js",
     "static/media/about.png": "/static/media/about.4d62c7f7caa881d9a37a.png",
     "static/media/avatar.svg": "/static/media/avatar.6acdd0f348322ba06d8275de5dd8ee85.svg",
+    "static/media/portfolio-img1.png": "/static/media/portfolio-img1.45683ecec825e4f8a2df.png",
+    "static/media/portfolio-img2.png": "/static/media/portfolio-img2.4bc543f44ea95b42b13d.png",
+    "static/media/portfolio-img3.png": "/static/media/portfolio-img3.c95fa388bc06e1858268.png",
     "static/media/site-bg.jpg": "/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/dotNET-Full-Stack-Foundation.pdf": "/static/media/dotNET-Full-Stack-Foundation.162de654b5244e910965.pdf",
+    "static/media/CV.pdf": "/static/media/CV.cfe324135ebe9424bdc1.pdf",
+    "static/media/Skilvul-SkilBadge-JavaScript-Dasar.pdf": "/static/media/Skilvul-SkilBadge-JavaScript-Dasar.2d4ed51086a65fad090b.pdf",
+    "static/media/Skilvul-SkilBadge-HTML-Dasar.pdf": "/static/media/Skilvul-SkilBadge-HTML-Dasar.58f7b2b316c76dc3e6b6.pdf",
+    "static/media/Skilvul-SkilBadge-CSS-Dasar.pdf": "/static/media/Skilvul-SkilBadge-CSS-Dasar.5addc6606195cb39e9bf.pdf",
     "static/media/logo.svg": "/static/media/logo.0099625dbfe83d14a918b1c8067ad685.svg",
     "index.html": "/index.html",
-    "main.abb9315c.css.map": "/static/css/main.abb9315c.css.map",
-    "main.57180fc7.js.map": "/static/js/main.57180fc7.js.map"
+    "main.3f66e6ca.css.map": "/static/css/main.3f66e6ca.css.map",
+    "main.dadc2ffc.js.map": "/static/js/main.dadc2ffc.js.map"
   },
   "entrypoints": [
-    "static/css/main.abb9315c.css",
-    "static/js/main.57180fc7.js"
+    "static/css/main.3f66e6ca.css",
+    "static/js/main.dadc2ffc.js"
   ]
 }
