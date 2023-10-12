@@ -8,6 +8,7 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaLaravel, FaReact, FaJava, FaPhp } from 'react-icons/fa';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -26,9 +27,18 @@ const About = () => {
           </motion.div>
           <div className='flex-1'>
             <h2 className='h2 font-semibold text-accent'>About Me.</h2>
-            <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Hello! Interestingly, I got introduced to programming in 
+            <h5 className='h5 text-[14px] lg:text-[18px] mb-4 font-secondary font-light'>Hello! Interestingly, I got introduced to programming in 
             freshman year at <span text-accent>Bina Nusantara University, Indonesia</span> where I study my Bachelors of Computer Science (2021-2025).</h5>
-            <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Here is a list of the technologies that familiar with!</h5>
+            <h5 className='h5 text-[14px] lg:text-[18px] mb-4 font-secondary font-light'>Here is a list of the technologies that familiar with!</h5>
+            <div className='flex text-[16px] lg:text-[24px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-10'>
+              <FaHtml5/>
+              <FaCss3Alt/>
+              <FaJsSquare/>
+              <FaLaravel/>
+              <FaReact/>
+              <FaJava/>
+              <FaPhp/>
+            </div>
 
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
@@ -65,7 +75,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className='flex flex-col lg:flex-row mt-32 mb-32'>
+        <div className='flex flex-col lg:flex-row mt-12 mb-1 lg:mb-32'>
           <div className='flex-1 mb-12 lg:mb-0'>
             <h2 className='h2 text-accent font-semibold mb-12'>My Certifications</h2>
             <div className='flex flex-col lg:flex-row text-[25px] gap-y-8 max-w-max mx-auto lg:mx-0 mb-28'>
