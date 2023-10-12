@@ -39,7 +39,7 @@ const Services = () => {
               {servicee.map((service, index) => {
                 const { name, description, link, date } = service;
                 return (
-                  <div className='flex border-b border-white/20 h-[185px] mb-8' key={index}>
+                  <div className='flex border-b border-white/20 h-[190px] mb-8' key={index}>
                     <div className='max-w-[476px]'>
                       <h4 className='text-[20px] tracking-wider font-secondary font-semibold mb-6'>{name}</h4>
                       <p className='text-[14px] lg:text-[16px] mb-6 font-secondary font-light leading-tight'>{description}</p>
