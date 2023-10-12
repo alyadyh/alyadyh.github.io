@@ -60,7 +60,7 @@ const Work = () => {
                 </span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>LonelyScape</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-6 transition-all duration-500 z-50'>
                 <span className='text-sm text-accent font-quartenary'>
