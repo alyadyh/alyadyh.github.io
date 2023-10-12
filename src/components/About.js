@@ -4,6 +4,7 @@ import HTMLpdf from '../assets/files/Skilvul-SkilBadge-HTML-Dasar.pdf';
 import CSSpdf from '../assets/files/Skilvul-SkilBadge-CSS-Dasar.pdf';
 import JSpdf from '../assets/files/Skilvul-SkilBadge-JavaScript-Dasar.pdf';
 import dotNETpdf from '../assets/files/dotNET-Full-Stack-Foundation.pdf';
+import CVpdf from '../assets/files/CV.pdf';
 import { BsArrowUpRight } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -16,7 +17,7 @@ const About = () => {
   });
   return (
     <section className='section' id='about' ref={ref}>
-      <div className="container mx-auto mt-[45px]">
+      <div className="container mx-auto mt-24">
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           <motion.div
             variants={fadeIn('right', 0.3)}
@@ -70,7 +71,9 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Download my CV</button>
+                <a href={CVpdf} target="_blank">
+                  <button className='btn btn-lg'>Download my CV</button>
+                </a>
             </div>
           </div>
         </div>

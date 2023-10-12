@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Logo from '../assets/logo.svg';
+import CVpdf from '../assets/files/CV.pdf';
 
 const Header = () => {
   return (
@@ -11,7 +11,9 @@ const Header = () => {
             <img src={Logo} alt=''/>
           </a>
 
-          <button className='btn btn-sm'>CV</button>
+          <a href={CVpdf} target="_blank">
+            <button className='btn btn-sm'>CV</button>
+          </a>
         </div>
       </div>
     </header>
