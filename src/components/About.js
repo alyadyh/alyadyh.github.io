@@ -17,21 +17,21 @@ const About = () => {
   });
   return (
     <section className='section' id='about' ref={ref}>
-      <div className="container mx-auto mt-24">
+      <div className="container mx-3 lg:mx-auto mt-[55px]">
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial="hidden"
             whileInView={'show'}
-            viewport={{once: false, amount: 0.3}} 
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[200px] lg:h-[500px] mix-blend-lighten bg-top'>
+            viewport={{once: false, amount: 0.3}}
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[400px] lg:h-[500px] mix-blend-lighten bg-top'>
           </motion.div>
           <div className='flex-1'>
             <h2 className='h2 font-semibold text-accent'>About Me.</h2>
-            <h5 className='h5 text-[14px] lg:text-[18px] mb-4 font-secondary font-light'>Hello! Interestingly, I got introduced to programming in 
-            freshman year at <span text-accent>Bina Nusantara University, Indonesia</span> where I study my Bachelors of Computer Science (2021-2025).</h5>
-            <h5 className='h5 text-[14px] lg:text-[18px] mb-4 font-secondary font-light'>Here is a list of the technologies that familiar with!</h5>
-            <div className='flex text-[16px] lg:text-[24px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-10'>
+            <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Interestingly, I got introduced to programming in 
+            freshman year at Bina Nusantara University, Indonesia where I study my Bachelors of Computer Science.</h5>
+            <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Here is the list of technologies that i'm familiar with!</h5>
+            <div className='flex text-[24px] lg:text-[24px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:mb-14'>
               <FaHtml5/>
               <FaCss3Alt/>
               <FaJsSquare/>
@@ -41,7 +41,7 @@ const About = () => {
               <FaPhp/>
             </div>
 
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mt-20 lg:mt-12 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={2} duration={3} /> : null}
@@ -53,7 +53,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={9} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Projects <br/>
@@ -70,18 +70,18 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-x-8 items-center'>
+            <div className='flex gap-x-8 items-center mb-0'>
                 <a href={CVpdf} target="_blank">
-                  <button className='btn btn-lg'>Download my CV</button>
+                  <button className='btn btn-sm lg:btn-lg'>Download my CV</button>
                 </a>
             </div>
           </div>
         </div>
 
-        <div className='flex flex-col lg:flex-row mt-12 mb-1 lg:mb-32'>
+        <div className='flex flex-col lg:flex-row mt-24 lg:mt-[-55px] mb-1 lg:mb-32'>
           <div className='flex-1 mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent font-semibold mb-12'>My Certifications</h2>
-            <div className='flex flex-col lg:flex-row text-[25px] gap-y-8 max-w-max mx-auto lg:mx-0 mb-28'>
+            <h2 className='h2 text-accent font-semibold mb-8'>My Certifications</h2>
+            <div className='flex flex-col lg:flex-row text-[25px] gap-y-7 max-w-max mx-0 lg:mx-0 mb-28'>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>HTML</a>
                 <a href={HTMLpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
