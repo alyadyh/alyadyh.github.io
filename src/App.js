@@ -18,7 +18,7 @@ const App = () => {
       <Services />
       <Work />
       <Contact />
-      <div className='h-auto'></div>
+      <div className='h-[250px] lg:h-[60px]'></div>
     </div>
   );
 };
