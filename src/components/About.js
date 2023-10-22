@@ -17,7 +17,7 @@ const About = () => {
   });
   return (
     <section className='section' id='about' ref={ref}>
-      <div className="container mx-3 lg:mx-auto mt-[55px]">
+      <div className="container p-7 lg:mx-auto mt-[55px]">
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           <motion.div
             variants={fadeIn('right', 0.3)}
@@ -41,9 +41,9 @@ const About = () => {
               <FaPhp/>
             </div>
 
-            <div className='flex gap-x-6 lg:gap-x-10 mt-20 lg:mt-12 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mt-24 lg:mt-12 mb-12'>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={2} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
@@ -52,7 +52,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={9} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
@@ -61,7 +61,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
@@ -84,27 +84,35 @@ const About = () => {
             <div className='flex flex-col lg:flex-row text-[25px] gap-y-7 max-w-max mx-0 lg:mx-0 mb-28'>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>HTML</a>
-                <a href={HTMLpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
-                    <BsArrowUpRight />
-                </a>
+                <div className='flex flex-col flex-1 items-end'>
+                  <a href={HTMLpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
+                      <BsArrowUpRight />
+                  </a>
+                </div>
               </div>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>CSS</a>
-                <a href={CSSpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
-                    <BsArrowUpRight />
-                </a>
+                <div className='flex flex-col flex-1 items-end'>
+                  <a href={CSSpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
+                      <BsArrowUpRight />
+                  </a>
+                </div>
               </div>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>JavaScript</a>
-                <a href={JSpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
-                    <BsArrowUpRight />
-                </a>
+                <div className='flex flex-col flex-1 items-end'>
+                  <a href={JSpdf} target="_blank" className='btn w-7 h-7 lg:mr-[42px] text-[16px] flex justify-center items-center'>
+                      <BsArrowUpRight />
+                  </a>
+                </div>
               </div>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>.NET Full-Stack Foundation</a>
-                <a href={dotNETpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
-                    <BsArrowUpRight />
-                </a>
+                <div className='flex flex-col flex-1 items-end text-right'>
+                  <a href={dotNETpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
+                      <BsArrowUpRight />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

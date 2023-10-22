@@ -24,7 +24,7 @@ const servicee = [
 const Services = () => {
   return (
     <section className='section' id='services'>
-      <div className='container mx-3 lg:mx-auto'>
+      <div className='container p-7 lg:mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           <div className='flex-1 mb-8 lg:mb-0'>
             <h2 className='h2 text-accent font-semibold mb-6'>My Experiences</h2>

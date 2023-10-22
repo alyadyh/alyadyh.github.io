@@ -7,8 +7,8 @@ import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
-    <section className='min-h-[85vh] lg:min-h-[78vh]' id='home'>
-      <div className='container mx-3 lg:mx-auto mt-4 mb-24'>
+    <section className='min-h-[0vh] lg:min-h-[78vh]' id='home'>
+      <div className='container p-7 lg:mx-auto mb-24'>
         <div className='flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-20'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
