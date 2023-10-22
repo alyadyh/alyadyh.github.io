@@ -27,7 +27,7 @@ const About = () => {
             className='flex-1 bg-about bg-contain bg-no-repeat h-[400px] lg:h-[500px] mix-blend-lighten bg-top'>
           </motion.div>
           <div className='flex-1'>
-            <h2 className='h2 font-semibold text-accent'>About Me.</h2>
+            <h2 className='h2 font-semibold text-2xl lg:text-3xl mb-2 lg:mb-6 text-accent'>About Me.</h2>
             <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Interestingly, I got introduced to programming in 
             freshman year at Bina Nusantara University, Indonesia where I study my Bachelors of Computer Science.</h5>
             <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Here is the list of technologies that i'm familiar with!</h5>
@@ -41,10 +41,11 @@ const About = () => {
               <FaPhp/>
             </div>
 
-            <div className='flex gap-x-6 lg:gap-x-10 mt-24 lg:mt-12 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mt-9 lg:mt-12 mb-9 lg:mb-12'>
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={2} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={2} duration={3} /> 
+                  : <CountUp start={0} end={2} duration={3} />}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Years of <br/>
@@ -53,7 +54,8 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={9} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={9} duration={3} /> 
+                  : <CountUp start={0} end={9} duration={3} />}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Projects <br/>
@@ -62,7 +64,8 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={4} duration={3} /> 
+                  : <CountUp start={0} end={4} duration={3} />}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Certification <br/>
@@ -80,8 +83,8 @@ const About = () => {
 
         <div className='flex flex-col lg:flex-row mt-24 lg:mt-[-55px] mb-1 lg:mb-32'>
           <div className='flex-1 mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent font-semibold mb-8'>My Certifications</h2>
-            <div className='flex flex-col lg:flex-row text-[25px] gap-y-7 max-w-max mx-0 lg:mx-0 mb-28'>
+            <h2 className='h2 text-accent font-semibold text-2xl lg:text-3xl mb-6'>My Certifications</h2>
+            <div className='flex flex-col lg:flex-row text-[25px] gap-y-3 max-w-max mx-0 lg:mx-0 mb-28'>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>HTML</a>
                 <div className='flex flex-col flex-1 items-end'>

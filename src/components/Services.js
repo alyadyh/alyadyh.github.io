@@ -27,8 +27,8 @@ const Services = () => {
       <div className='container p-7 lg:mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           <div className='flex-1 mb-8 lg:mb-0'>
-            <h2 className='h2 text-accent font-semibold mb-6'>My Experiences</h2>
-            <p className='max-w-[455px] mb-8 text-[14px] lg:text-[18px]'>Here is my professional experience.</p>
+            <h2 className='h2 text-2xl lg:text-3xl text-accent font-semibold mb-2 lg:mb-6'>My Experiences</h2>
+            <p className='max-w-[455px] mb-8 text-[15px] lg:text-[18px]'>Here is my professional experience.</p>
           </div>
           <motion.div variants={fadeIn('left', 0.3)}
           initial="hidden"

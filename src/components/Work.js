@@ -12,8 +12,8 @@ const Work = () => {
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <div className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             <div>
-              <h2 className='h2 leading-tight font-semibold text-accent'>Some Things <br/>I've Built</h2>
-              <p className='max-w-lg mb-8 lg:mb-[126px]'>Check out some of my noteworthy projects. </p>
+              <h2 className='h2 text-2xl lg:text-3xl leading-tight font-semibold text-accent mb-2 lg:mb-6'>Some Things <br/>I've Built</h2>
+              <p className='max-w-lg text-[15px] lg:text-[18px] mb-8 lg:mb-[126px]'>Check out some of my noteworthy projects. </p>
               <a href='https://github.com/alyadyh?tab=repositories' target="_blank">
                 <button className='btn btn-sm'>View all projects</button>
               </a>
