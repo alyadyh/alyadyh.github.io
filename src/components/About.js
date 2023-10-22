@@ -18,13 +18,13 @@ const About = () => {
   return (
     <section className='section' id='about' ref={ref}>
       <div className="container p-7 lg:mx-auto mt-[55px]">
-        <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+        <div className='flex flex-col gap-y-6 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial="hidden"
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-            className='flex-1 bg-about bg-contain bg-no-repeat h-[400px] lg:h-[500px] mix-blend-lighten bg-top'>
+            className='flex-1 bg-about bg-contain bg-no-repeat h-[600px] lg:h-[500px] mix-blend-lighten bg-top'>
           </motion.div>
           <div className='flex-1'>
             <h2 className='h2 font-semibold text-2xl lg:text-3xl mb-2 lg:mb-6 text-accent'>About Me.</h2>
@@ -111,11 +111,14 @@ const About = () => {
               </div>
               <div className='flex flex-row gap-x-6'>
                 <a href='#' className='text-gradient btn-link'>.NET Full-Stack Foundation</a>
-                <div className='flex flex-col flex-1 items-end text-right'>
+                <div className='flex flex-col flex-1 items-end'>
                   <a href={dotNETpdf} target="_blank" className='btn w-7 h-7 mr-[42px] text-[16px] flex justify-center items-center'>
                       <BsArrowUpRight />
                   </a>
                 </div>
+              </div>
+              <div className='flex flex-row gap-x-6'>
+                <a href='#'></a>
               </div>
             </div>
           </div>
