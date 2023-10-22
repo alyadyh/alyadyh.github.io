@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 const Banner = () => {
   return (
     <section className='min-h-[0vh] lg:min-h-[78vh]' id='home'>
-      <div className='container p-7 lg:mx-auto mb-24'>
+      <div className='container p-7 lg:mx-auto mb-24 lg:my-auto my-0'>
         <div className='flex gap-y-8 lg:flex-row lg:items-center lg:gap-x-20'>
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
@@ -49,7 +49,9 @@ const Banner = () => {
               <Link to='contact' smooth={true} spy={true} className='cursor-pointer'>
                 <button className='btn btn-sm lg:btn-lg'>Contact me</button>
               </Link>
-              {/* <a href='#' className='text-gradient btn-link'>My Portfolio</a> */}
+              <Link to='work' smooth={true} spy={true} className='cursor-pointer'>
+              <a href='#' className='text-gradient btn-link lg:text-lg text-sm'>My Portfolio</a>
+              </Link>
             </motion.div>
           </div>
           {/* image */}
