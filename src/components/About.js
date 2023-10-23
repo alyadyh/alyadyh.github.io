@@ -29,7 +29,7 @@ const About = () => {
           <div className='flex-1'>
             <h2 className='h2 font-semibold text-2xl lg:text-3xl mb-2 lg:mb-6 text-accent'>About Me.</h2>
             <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Interestingly, I got introduced to programming in 
-            freshman year at Bina Nusantara University, Indonesia where I study my Bachelors of Computer Science.</h5>
+            freshman year at Binus University, Indonesia where I study my Bachelors of Computer Science.</h5>
             <h5 className='h5 text-[13px] lg:text-[18px] mb-4 font-secondary font-light'>Here is the list of technologies that i'm familiar with!</h5>
             <div className='flex text-[24px] lg:text-[24px] gap-x-6 max-w-max mx-auto lg:mx-0 lg:mb-14'>
               <FaHtml5/>
@@ -45,17 +45,23 @@ const About = () => {
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={2} duration={3} /> 
-                  : <CountUp start={0} end={2} duration={3} />}
+                  : null}
+                  <div className='xs:text-[40px] lg:hidden'>
+                    <CountUp start={0} end={2} duration={3} />
+                  </div>
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Years of <br/>
-                  Organization
+                  Organization   
                 </div>
               </div>
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={9} duration={3} /> 
-                  : <CountUp start={0} end={9} duration={3} />}
+                  : null}
+                  <div className='xs:text-[40px] lg:hidden'>
+                    <CountUp start={0} end={9} duration={3} />
+                  </div>
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Projects <br/>
@@ -65,7 +71,10 @@ const About = () => {
               <div>
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={4} duration={3} /> 
-                  : <CountUp start={0} end={4} duration={3} />}
+                  : null}
+                  <div className='xs:text-[40px] lg:hidden'>
+                    <CountUp start={0} end={4} duration={3} />
+                  </div>
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Certification <br/>
