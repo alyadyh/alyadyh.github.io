@@ -46,9 +46,9 @@ const About = () => {
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={2} duration={3} /> 
                   : null}
-                  <div className='xs:text-[40px] lg:hidden'>
+                  {/* <div className='xs:text-[40px] lg:hidden'>
                     <CountUp start={0} end={2} duration={3} />
-                  </div>
+                  </div> */}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Years of <br/>
@@ -59,9 +59,9 @@ const About = () => {
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={9} duration={3} /> 
                   : null}
-                  <div className='xs:text-[40px] lg:hidden'>
+                  {/* <div className='xs:text-[40px] lg:hidden'>
                     <CountUp start={0} end={9} duration={3} />
-                  </div>
+                  </div> */}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Projects <br/>
@@ -72,9 +72,9 @@ const About = () => {
                 <div className='text-[40px] lg:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={4} duration={3} /> 
                   : null}
-                  <div className='xs:text-[40px] lg:hidden'>
+                  {/* <div className='xs:text-[40px] lg:hidden'>
                     <CountUp start={0} end={4} duration={3} />
-                  </div>
+                  </div> */}
                 </div>
                 <div className='font-primary text-xs lg:text-sm tracking-[2px]'>
                   Certification <br/>
