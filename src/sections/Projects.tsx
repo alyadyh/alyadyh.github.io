@@ -5,6 +5,7 @@ import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "../assets/icons/check-circle.svg";
 import grainImage from "../assets/images/grain.jpg";
 import { ArrowUpRight } from "lucide-react";
+import { SectionHeader } from "../components/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -65,15 +66,11 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text">
-            Some things I&apos;ve built
-          </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">My Projects</h2>
-        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
-          Check out some of my noteworthy projects.
-        </p>
+        <SectionHeader
+          title="My Projects"
+          eyebrow="Some things I&apos;ve built"
+          desc="Check out some of my noteworthy projects."
+        />
         <div className="flex flex-col mt-10 md:mt-20 mx-10 gap-20">
           {portfolioProjects.map((project) => (
             <div
