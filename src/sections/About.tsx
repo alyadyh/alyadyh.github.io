@@ -5,6 +5,7 @@ import { ToolboxItems } from "../components/ToolboxItems";
 import bookImage from "../assets/images/book-cover.png";
 import mapImage from "../assets/images/map.png";
 import winkMemoji from "../assets/images/wink-memoji.png";
+import smileMemoji from "../assets/images/smile-memoji.png";
 import Image from "next/image";
 import {
   SiAndroidstudio,
@@ -198,9 +199,11 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          <Card>
-            <Image src={mapImage} alt="Map" />
-            <Image src={winkMemoji} alt="Wink Memoji" />
+          <Card className="h-[320px] p-0 relative">
+            <Image src={mapImage} alt="Map" className="object-cover w-full h-full" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline-offset-2 after:rounded-full after:outline-gray-950/30 after:bg-gradient-to-r after:from-emerald-400 after:to-sky-400 after:-z-10">
+              <Image src={smileMemoji} alt="Smile Memoji" className="size-20" />
+            </div>
           </Card>
         </div>
       </div>
