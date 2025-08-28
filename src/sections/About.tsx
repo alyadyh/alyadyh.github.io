@@ -88,28 +88,58 @@ const toolboxItems = [
 
 const hobbies = [
   {
-    title: "Music",
+    title: "Listening Music",
     emoji: "🎵",
+    left: "5%",
+    top: "67%",
   },
   {
     title: "Photography",
     emoji: "📸",
+    left: "10%",
+    top: "32%",
   },
   {
     title: "Graphic Design",
     emoji: "🎨",
+    left: "5%",
+    top: "8%",
+  },
+  {
+    title: "Playing Board Games",
+    emoji: "♟️",
+    left: "49%",
+    top: "62%",
   },
   {
     title: "Reading",
     emoji: "📚",
+    left: "60%",
+    top: "29%",
   },
   {
     title: "Cooking",
     emoji: "🍳",
+    left: "28%",
+    top: "53%",
   },
   {
     title: "Badminton",
     emoji: "🏸",
+    left: "75%",
+    top: "48%",
+  },
+  {
+    title: "Cycling",
+    emoji: "🚴",
+    left: "40%",
+    top: "35%",
+  },
+  {
+    title: "Cinephilia",
+    emoji: "🎬",
+    left: "70%",
+    top: "10%",
   },
 ];
 
@@ -136,8 +166,7 @@ export const AboutSection = () => {
           <Card className="h-[320px] p-0">
             <CardHeader
               title="My Toolbox"
-              desc="Explore the technologies and tools I used to craft exceptional
-                digital experiences."
+              desc="Discover the tools and technologies behind my digital creations."
               className="px-6 pt-6"
             />
             <ToolboxItems items={toolboxItems} className="mt-6" />
@@ -148,15 +177,21 @@ export const AboutSection = () => {
             />
           </Card>
 
-          <Card>
+          <Card className="h-[320px] p-0 flex flex-col">
             <CardHeader
               title="Beyond the Code"
-              desc="Explore my interests and hobbies beyond the digital realm."
+              desc="The little things that bring joy and inspiration to my life."
+              className="px-6 pt-6"
             />
-            <div>
+            <div className="relative flex-1">
               {hobbies.map((hobby) => (
-                <div key={hobby.title}>
-                  <span>{hobby.title}</span>
+                <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-400 to-sky-400 rounded-full py-1.5 absolute"
+                  style={{
+                    left: hobby.left,
+                    top: hobby.top,
+                  }}
+                >
+                  <span className="font-medium text-gray-950">{hobby.title}</span>
                   <span>{hobby.emoji}</span>
                 </div>
               ))}
