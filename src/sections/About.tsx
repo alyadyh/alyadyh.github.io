@@ -104,43 +104,43 @@ const hobbies = [
     title: "Graphic Design",
     emoji: "🎨",
     left: "5%",
-    top: "8%",
+    top: "5%",
   },
   {
-    title: "Playing Board Games",
+    title: "Chess",
     emoji: "♟️",
-    left: "49%",
-    top: "62%",
+    left: "58%",
+    top: "65%",
   },
   {
     title: "Reading",
     emoji: "📚",
-    left: "60%",
-    top: "29%",
+    left: "55%",
+    top: "30%",
   },
   {
     title: "Cooking",
     emoji: "🍳",
-    left: "28%",
+    left: "35%",
     top: "53%",
   },
   {
     title: "Badminton",
     emoji: "🏸",
-    left: "75%",
-    top: "48%",
+    left: "73%",
+    top: "43%",
   },
   {
     title: "Cycling",
     emoji: "🚴",
     left: "40%",
-    top: "35%",
+    top: "15%",
   },
   {
     title: "Cinephilia",
     emoji: "🎬",
     left: "70%",
-    top: "10%",
+    top: "0%",
   },
 ];
 
@@ -158,25 +158,27 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
-                desc="Explore the book shaping my perspectives."
+                desc="You speak what you read."
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
                 <Image src={bookImage} alt="Book Cover" />
               </div>
             </Card>
 
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
+            <Card className="h-[320px] flex flex-col gap-4 md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
                 desc="Discover the tools and technologies behind my digital creations."
                 className=""
               />
-              <ToolboxItems items={toolboxItems} className="" />
-              <ToolboxItems
-                items={toolboxItems}
-                className="mt-6"
-                itemWrapperClassName="-translate-x-1/2"
-              />
+              <div>
+                <ToolboxItems items={toolboxItems} className="" />
+                <ToolboxItems
+                  items={toolboxItems}
+                  className="mt-6"
+                  itemWrapperClassName="-translate-x-1/2"
+                />
+              </div>
             </Card>
           </div>
 

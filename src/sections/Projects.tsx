@@ -72,7 +72,7 @@ export const ProjectsSection = () => {
           eyebrow="Some things I've built"
           desc="Check out some of my noteworthy projects."
         />
-        <div className="flex flex-col mt-10 md:mt-20 mx-10 gap-20">
+        <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project) => (
             <Card
               key={project.title}
