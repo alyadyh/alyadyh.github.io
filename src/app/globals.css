@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Design tokens (v4) */
 @theme {
   /* Breakpoints (optional, if you actually use them) */
