@@ -1,154 +1,19 @@
-'use client'
+"use client";
 
+import { useRef } from "react";
+import Image from "next/image";
 import { Card } from "../components/Card";
 import { SectionHeader } from "../components/SectionHeader";
 import { CardHeader } from "../components/CardHeader";
 import { ToolboxItems } from "../components/ToolboxItems";
+import { toolboxItems, hobbies } from "../data/aboutData";
 import bookImage from "../assets/images/book-cover.png";
 import mapImage from "../assets/images/map.png";
 import smileMemoji from "../assets/images/smile-memoji.png";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  SiAndroidstudio,
-  SiBootstrap,
-  SiDocker,
-  SiFigma,
-  SiJavascript,
-  SiNextdotjs,
-  SiPostgresql,
-  SiReact,
-  SiSupabase,
-  SiTailwindcss,
-  SiTypescript,
-  SiUnity,
-  SiVuedotjs,
-  SiDotnet,
-} from "@icons-pack/react-simple-icons";
-import { useRef } from "react";
-
-const toolboxItems = [
-  {
-    title: "JavaScript",
-    iconType: SiJavascript,
-  },
-  {
-    title: "TypeScript",
-    iconType: SiTypescript,
-  },
-  {
-    title: "React",
-    iconType: SiReact,
-  },
-  {
-    title: "Next.js",
-    iconType: SiNextdotjs,
-  },
-  {
-    title: "Vue.js",
-    iconType: SiVuedotjs,
-  },
-  {
-    title: "React Native",
-    iconType: SiReact,
-  },
-  {
-    title: "Tailwind CSS",
-    iconType: SiTailwindcss,
-  },
-  {
-    title: "Bootstrap",
-    iconType: SiBootstrap,
-  },
-  {
-    title: "Supabase",
-    iconType: SiSupabase,
-  },
-  {
-    title: "PostgreSQL",
-    iconType: SiPostgresql,
-  },
-  {
-    title: ".NET",
-    iconType: SiDotnet,
-  },
-  {
-    title: "Android Studio",
-    iconType: SiAndroidstudio,
-  },
-  {
-    title: "Docker",
-    iconType: SiDocker,
-  },
-  {
-    title: "Figma",
-    iconType: SiFigma,
-  },
-  {
-    title: "Unity",
-    iconType: SiUnity,
-  },
-];
-
-const hobbies = [
-  {
-    title: "Listening Music",
-    emoji: "🎵",
-    left: "5%",
-    top: "67%",
-  },
-  {
-    title: "Photography",
-    emoji: "📸",
-    left: "10%",
-    top: "32%",
-  },
-  {
-    title: "Graphic Design",
-    emoji: "🎨",
-    left: "5%",
-    top: "5%",
-  },
-  {
-    title: "Chess",
-    emoji: "♟️",
-    left: "58%",
-    top: "65%",
-  },
-  {
-    title: "Reading",
-    emoji: "📚",
-    left: "55%",
-    top: "30%",
-  },
-  {
-    title: "Cooking",
-    emoji: "🍳",
-    left: "35%",
-    top: "53%",
-  },
-  {
-    title: "Badminton",
-    emoji: "🏸",
-    left: "73%",
-    top: "43%",
-  },
-  {
-    title: "Cycling",
-    emoji: "🚴",
-    left: "40%",
-    top: "15%",
-  },
-  {
-    title: "Cinephilia",
-    emoji: "🎬",
-    left: "70%",
-    top: "0%",
-  },
-];
 
 export const AboutSection = () => {
-  const constraintRef = useRef(null)
+  const constraintRef = useRef(null);
 
   return (
     <section id="about" className="py-20 lg:py-28">
@@ -161,10 +26,7 @@ export const AboutSection = () => {
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
-              <CardHeader
-                title="My Reads"
-                desc="You speak what you read."
-              />
+              <CardHeader title="My Reads" desc="You speak what you read." />
               <div className="w-40 mx-auto mt-2 md:mt-0">
                 <Image src={bookImage} alt="Book Cover" />
               </div>
@@ -177,7 +39,10 @@ export const AboutSection = () => {
                 className=""
               />
               <div>
-                <ToolboxItems items={toolboxItems} itemWrapperClassName="animate-move-left [animation-duration:30s]" />
+                <ToolboxItems
+                  items={toolboxItems}
+                  itemWrapperClassName="animate-move-left [animation-duration:30s]"
+                />
                 <ToolboxItems
                   items={toolboxItems}
                   className="mt-6"

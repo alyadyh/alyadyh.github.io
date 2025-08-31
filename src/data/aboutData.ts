@@ -1,0 +1,46 @@
+import {
+  SiAndroidstudio,
+  SiBootstrap,
+  SiDocker,
+  SiFigma,
+  SiJavascript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiReact,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+  SiUnity,
+  SiVuedotjs,
+  SiDotnet,
+} from "@icons-pack/react-simple-icons";
+
+export const toolboxItems = [
+  { title: "JavaScript", iconType: SiJavascript },
+  { title: "TypeScript", iconType: SiTypescript },
+  { title: "React", iconType: SiReact },
+  { title: "Next.js", iconType: SiNextdotjs },
+  { title: "Vue.js", iconType: SiVuedotjs },
+  { title: "React Native", iconType: SiReact },
+  { title: "Tailwind CSS", iconType: SiTailwindcss },
+  { title: "Bootstrap", iconType: SiBootstrap },
+  { title: "Supabase", iconType: SiSupabase },
+  { title: "PostgreSQL", iconType: SiPostgresql },
+  { title: ".NET", iconType: SiDotnet },
+  { title: "Android Studio", iconType: SiAndroidstudio },
+  { title: "Docker", iconType: SiDocker },
+  { title: "Figma", iconType: SiFigma },
+  { title: "Unity", iconType: SiUnity },
+];
+
+export const hobbies = [
+  { title: "Listening Music", emoji: "🎵", left: "5%", top: "67%" },
+  { title: "Photography", emoji: "📸", left: "10%", top: "32%" },
+  { title: "Graphic Design", emoji: "🎨", left: "5%", top: "5%" },
+  { title: "Chess", emoji: "♟️", left: "58%", top: "65%" },
+  { title: "Reading", emoji: "📚", left: "55%", top: "30%" },
+  { title: "Cooking", emoji: "🍳", left: "35%", top: "53%" },
+  { title: "Badminton", emoji: "🏸", left: "73%", top: "43%" },
+  { title: "Cycling", emoji: "🚴", left: "40%", top: "15%" },
+  { title: "Cinephilia", emoji: "🎬", left: "70%", top: "0%" },
+];

@@ -14,7 +14,9 @@ export const ToolboxItems = ({
     <div
       className={`flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] ${className}`}
     >
-      <div className={`flex flex-none py-0.5 gap-6 pr-6 ${itemWrapperClassName}`}>
+      <div
+        className={`flex flex-none py-0.5 gap-6 pr-6 ${itemWrapperClassName}`}
+      >
         {[...new Array(2)].fill(0).map((_, index) => (
           <Fragment key={index}>
             {items.map((item) => (

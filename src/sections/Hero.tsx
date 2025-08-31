@@ -1,66 +1,15 @@
 import Image from "next/image";
 import memojiImage from "../assets/images/memoji-computer.png";
-import grainImage from "../assets/images/grain.jpg";
-import StarIcon from "../assets/icons/star.svg";
-import SparkleIcon from "../assets/icons/sparkle.svg";
 import { ArrowDown } from "lucide-react";
-import { HeroOrbit } from "../components/HeroOrbit";
+import { HeroBackground } from "../components/HeroBackground";
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
-        {/* Grain rings behind the hero's surroundings */}
-        <div
-          className="absolute inset-0 -z-30 opacity-8"
-          style={{ backgroundImage: `url(${grainImage.src})` }}
-        ></div>
-        <div className="size-[620px] hero-ring"></div>
-        <div className="size-[820px] hero-ring"></div>
-        <div className="size-[1020px] hero-ring"></div>
-        <div className="size-[1220px] hero-ring"></div>
-
-        {/* Stars surrounds the rings */}
-        <HeroOrbit size={430} rotation={-14} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <SparkleIcon className="size-8 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={440} rotation={79} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <SparkleIcon className="size-5 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration={35} shouldSpin spinDuration={10}>
-          <div className="size-2 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={530} rotation={-100} shouldOrbit orbitDuration={25} shouldSpin spinDuration={10}>
-          <div className="size-3 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={530} rotation={178} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <SparkleIcon className="size-10 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={550} rotation={20} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <StarIcon className="size-12 text-emerald-300" />
-        </HeroOrbit>
-        <HeroOrbit size={590} rotation={98} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <StarIcon className="size-8 text-emerald-300" />
-        </HeroOrbit>
-        <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration={20}>
-          <div className="size-4 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={710} rotation={144} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <SparkleIcon className="size-14 text-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration={40}>
-          <div className="size-3 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={770} rotation={-155} shouldOrbit orbitDuration={30} shouldSpin spinDuration={10}>
-          <StarIcon className="size-14 text-emerald-300" />
-        </HeroOrbit>
-        <HeroOrbit size={770} rotation={-169} shouldOrbit orbitDuration={30}>
-          <div className="size-2 rounded-full bg-emerald-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={800} rotation={-72} shouldOrbit orbitDuration={30} shouldSpin spinDuration={40}>
-          <StarIcon className="size-28 text-emerald-300" />
-        </HeroOrbit>
-      </div>
+    <section
+      id="home"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
+      <HeroBackground />
 
       <div className="container">
         <div className="flex flex-col items-center">
@@ -77,6 +26,7 @@ export const HeroSection = () => {
               Available for new projects
             </div>
           </div>
+
           <div className="max-w-lg mx-auto">
             <h1 className="text-3xl md:text-5xl font-serif text-center mt-8 tracking-wide">
               Hi, I&apos;m Alya Dhiya
@@ -86,6 +36,7 @@ export const HeroSection = () => {
               user-friendly applications.
             </p>
           </div>
+
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
             <a href="#projects">
               <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl cursor-pointer">
@@ -93,7 +44,7 @@ export const HeroSection = () => {
                 <ArrowDown size={18} />
               </button>
             </a>
-            
+
             <a href="#contact">
               <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer">
                 <span className="text-2xl">👋</span>
