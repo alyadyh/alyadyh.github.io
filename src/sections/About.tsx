@@ -189,13 +189,17 @@ export const AboutSection = () => {
               />
               <div className="relative flex-1">
                 {hobbies.map((hobby) => (
-                  <div key={hobby.title} className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-400 to-sky-400 rounded-full py-1.5 absolute"
+                  <div
+                    key={hobby.title}
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-400 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
                     }}
                   >
-                    <span className="font-medium text-gray-950">{hobby.title}</span>
+                    <span className="font-medium text-gray-950">
+                      {hobby.title}
+                    </span>
                     <span>{hobby.emoji}</span>
                   </div>
                 ))}
@@ -203,9 +207,17 @@ export const AboutSection = () => {
             </Card>
 
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image src={mapImage} alt="Map" className="object-cover w-full h-full object-left-top" />
+              <Image
+                src={mapImage}
+                alt="Map"
+                className="object-cover w-full h-full object-left-top"
+              />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline-offset-2 after:rounded-full after:outline-gray-950/30 after:bg-gradient-to-r after:from-emerald-400 after:to-sky-400 after:-z-10">
-                <Image src={smileMemoji} alt="Smile Memoji" className="size-20" />
+                <Image
+                  src={smileMemoji}
+                  alt="Smile Memoji"
+                  className="size-20"
+                />
               </div>
             </Card>
           </div>
