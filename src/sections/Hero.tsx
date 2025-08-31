@@ -9,7 +9,7 @@ import { HeroOrbit } from "../components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <section id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         {/* Grain rings behind the hero's surroundings */}
         <div
           className="absolute inset-0 -z-30 opacity-8"
@@ -87,14 +87,19 @@ export const HeroSection = () => {
             </p>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-            <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl">
-              <span className="font-semibold">Explore my work</span>
-              <ArrowDown size={18} />
-            </button>
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-              <span className="text-2xl">👋</span>
-              <span className="font-semibold">Let&apos;s connect</span>
-            </button>
+            <a href="#projects">
+              <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl cursor-pointer">
+                <span className="font-semibold">Explore my work</span>
+                <ArrowDown size={18} />
+              </button>
+            </a>
+            
+            <a href="#contact">
+              <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer">
+                <span className="text-2xl">👋</span>
+                <span className="font-semibold">Let&apos;s connect</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
