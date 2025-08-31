@@ -40,7 +40,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <a href="mailto:alya.mdyh@gmail.com?subject=Hello Alya!">
-                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer">
                   <span className="font-semibold">Contact Me</span>
                   <ArrowUpRight size={16} />
                 </button>
