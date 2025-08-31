@@ -214,7 +214,9 @@ export const AboutSection = () => {
                 alt="Map"
                 className="object-cover w-full h-full object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline-offset-2 after:rounded-full after:outline-gray-950/30 after:bg-gradient-to-r after:from-emerald-400 after:to-sky-400 after:-z-10">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 -z-20 animate-ping [animation-duration:1s]" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 -z-10" />
                 <Image
                   src={smileMemoji}
                   alt="Smile Memoji"
