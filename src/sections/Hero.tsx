@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import memojiImage from "../assets/images/memoji-computer.png";
 import { ArrowDown } from "lucide-react";
 import { HeroBackground } from "../components/HeroBackground";
+import { TypeAnimation } from "react-type-animation";
 
 export const HeroSection = () => {
   return (
@@ -28,13 +31,37 @@ export const HeroSection = () => {
           </div>
 
           <div className="max-w-lg mx-auto">
-            <h1 className="text-3xl md:text-5xl font-serif text-center mt-8 tracking-wide">
-              Hi, I&apos;m Alya Dhiya
-            </h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">
-              I&apos;m a passionate software engineer with a focus on building
-              user-friendly applications.
+              Hello, World!
             </p>
+            <div className="flex flex-col gap-2 md:gap-4 mt-4">
+              <h1 className="text-3xl md:text-5xl font-serif text-center tracking-wide">
+                I&apos;m Alya Dhiya
+              </h1>
+              <div className="text-2xl md:text-4xl text-center uppercase font-bold">
+                <span className="text-white/60 mr-2">a</span>
+                <TypeAnimation
+                  sequence={[
+                    "Developer",
+                    2000,
+                    "Designer",
+                    2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  repeat={Infinity}
+                  className="bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text"
+                />
+              </div>
+            </div>
+            {/* <motion.div
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-8 text-[25px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
+            >
+            </motion.div> */}
           </div>
 
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
