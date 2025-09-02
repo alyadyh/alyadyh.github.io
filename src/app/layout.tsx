@@ -17,6 +17,11 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "Alya Dhiya's Portfolio",
   description: "Personal Portfolio",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
