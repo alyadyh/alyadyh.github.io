@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import memojiImage from "../assets/images/memoji-computer.png";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, HeartHandshake } from "lucide-react";
 import { HeroBackground } from "../components/HeroBackground";
 import { TypeAnimation } from "react-type-animation";
 
@@ -50,7 +50,7 @@ export const HeroSection = () => {
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
-                  className="bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text"
+                  className="bg-gradient-to-r from-purple-300 to-sky-400 text-center text-transparent bg-clip-text"
                 />
               </div>
             </div>
@@ -74,8 +74,8 @@ export const HeroSection = () => {
 
             <a href="#contact">
               <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer">
-                <span className="text-2xl">👋</span>
                 <span className="font-semibold">Let&apos;s connect</span>
+                <HeartHandshake size={18} />
               </button>
             </a>
           </div>
