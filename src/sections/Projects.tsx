@@ -49,7 +49,7 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 hover:bg-purple-300/50 active:bg-purple-300/50 hover:text-white active:text-white cursor-pointer border border-white">
                       <span>View Demo</span>
                       <ArrowUpRight size={16} />
                     </button>

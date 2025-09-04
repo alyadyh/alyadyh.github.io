@@ -23,24 +23,24 @@ export const ContactSection = () => {
                   or teaming up to bring your vision to life.
                 </p>
               </div>
-              <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex mt-4 gap-4 justify-center md:justify-start">
                 <a
                   href="https://linkedin.com/in/alya-mardhiyyah/"
                   target="_blank"
                 >
-                  <FaLinkedin size={28} />
+                  <FaLinkedin size={30} className="hover:text-purple-700" />
                 </a>
                 <a href="https://github.com/alyadyh/" target="_blank">
-                  <FaGithub size={28} />
+                  <FaGithub size={30} className="hover:text-purple-700" />
                 </a>
                 <a href="https://instagram.com/alyadya_" target="_blank">
-                  <FaInstagram size={28} />
+                  <FaInstagram size={30} className="hover:text-purple-700" />
                 </a>
               </div>
             </div>
             <div>
               <a href="mailto:alya.mdyh@gmail.com?subject=Hello Alya!">
-                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 cursor-pointer">
+                <button className="text-white bg-gray-900 hover:bg-purple-300/50 active:bg-purple-300/50 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max cursor-pointer border border-gray-900/50 hover:border-white active:border-white">
                   <span className="font-semibold">Contact Me</span>
                   <ArrowUpRight size={16} />
                 </button>

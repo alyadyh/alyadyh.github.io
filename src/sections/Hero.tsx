@@ -54,26 +54,18 @@ export const HeroSection = () => {
                 />
               </div>
             </div>
-            {/* <motion.div
-              variants={fadeIn("up", 0.3)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
-              className="mb-8 text-[25px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
-            >
-            </motion.div> */}
           </div>
 
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
             <a href="#projects">
-              <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl cursor-pointer">
+              <button className="inline-flex items-center gap-2 border border-white/15 px-5 h-12 rounded-xl cursor-pointer hover:bg-white/50 active:bg-white/50">
                 <span className="font-semibold">Explore my work</span>
                 <ArrowDown size={18} />
               </button>
             </a>
 
             <a href="#contact">
-              <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer">
+              <button className="inline-flex items-center gap-2 border border-white bg-white hover:bg-purple-300/50 active:bg-purple-300/50 text-gray-900 hover:text-white active:text-white h-12 px-6 rounded-xl cursor-pointer">
                 <span className="font-semibold">Let&apos;s connect</span>
                 <HeartHandshake size={18} />
               </button>
