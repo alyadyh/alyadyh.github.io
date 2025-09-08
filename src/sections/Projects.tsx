@@ -1,9 +1,9 @@
 import Image from "next/image";
-import CheckCircleIcon from "../assets/icons/check-circle.svg";
 import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "../components/SectionHeader";
 import { Card } from "../components/Card";
 import { portfolioProjects } from "../data/projectsData";
+import { TechProjectIcon } from "../components/TechIcon";
 
 export const ProjectsSection = () => {
   return (
@@ -37,20 +37,23 @@ export const ProjectsSection = () => {
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result) => (
+                  <p className="mt-4 md:mt-5 text-sm md:text-base text-white/50">{project.description}</p>
+                  <ul className="flex flex-row gap-4 md:gap-5 mt-4 md:mt-5">
+                    {project.icons.map((icon, index) => (
                       <li
-                        key={result.title}
-                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        key={index}
+                        className="flex text-sm md:text-base"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
-                        <span>{result.title}</span>
+                        <TechProjectIcon component={icon.iconType} />
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                  >
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 hover:bg-purple-300/50 active:bg-purple-300/50 hover:text-white active:text-white cursor-pointer border border-white">
-                      <span>View Demo</span>
+                      <span>View Project</span>
                       <ArrowUpRight size={16} />
                     </button>
                   </a>

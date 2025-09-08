@@ -1,58 +1,65 @@
-import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
+import eventRadarWebPage from "../assets/images/projects/event-radar-web.png";
+import ibarberpalPage from "../assets/images/projects/ibarberpal.png";
+import kulinariaPage from "../assets/images/projects/kulinaria.png";
+
+import {
+  SiBootstrap,
+  SiJavascript,
+  SiLaravel,
+  SiCss,
+  SiHtml5,
+  SiXampp,
+  SiPhp,
+  SiSass,
+  SiNodedotjs,
+  SiBlender,
+  SiCanva,
+} from "@icons-pack/react-simple-icons";
 
 export const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      {
-        title: "Enhanced user experience by 40%",
-      },
-      {
-        title: "Improved site speed by 50%",
-      },
-      {
-        title: "Increased mobile traffic by 35%",
-      },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      {
-        title: "Expanded customer reach by 35%",
-      },
-      {
-        title: "Increased brand awareness by 15%",
-      },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "Front-end Developer",
     year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      {
-        title: "Enhanced user experience by 40%",
-      },
-      {
-        title: "Improved site speed by 50%",
-      },
-      {
-        title: "Increased mobile traffic by 35%",
-      },
+    title: "EventRadar",
+    description:
+      "EventRadar is a student website to democratize youth event information ranging from webinars and competitions.",
+    icons: [
+      { title: "NodeJS", iconType: SiNodedotjs },
+      { title: "Bootstrap", iconType: SiBootstrap },
+      { title: "SASS", iconType: SiSass },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/alyadyh/EventRadar",
+    image: eventRadarWebPage,
+  },
+  {
+    company: "Full Stack Developer",
+    year: "2023",
+    title: "iBarberPal",
+    description:
+      "iBarberPal is a web application that helps barbershop customers in choosing hairstyles to be more effective so they are not confused and doubtful if the specified hairstyle does not match the shape of their face.",
+    icons: [
+      { title: "Laravel", iconType: SiLaravel },
+      { title: "Bootstrap", iconType: SiBootstrap },
+      { title: "XAMPP", iconType: SiXampp },
+      { title: "PHP", iconType: SiPhp },
+    ],
+    link: "https://github.com/alyadyh/iBarberPal",
+    image: ibarberpalPage,
+  },
+  {
+    company: "Front-end Developer",
+    year: "2022",
+    title: "Kulinaria Landing Page",
+    description:
+      "Kulinaria website is a platform that introduces Indonesian culinary culture by providing downloadable AR cards and access to the Kulinaria AR mobile app for an interactive 3D experience.",
+    icons: [
+      { title: "HTML", iconType: SiHtml5 },
+      { title: "CSS", iconType: SiCss },
+      { title: "JavaScript", iconType: SiJavascript },
+      { title: "Blender 3D", iconType: SiBlender },
+      { title: "Canva", iconType: SiCanva },
+    ],
+    link: "https://drive.google.com/file/d/1GxhfrABnqeXqkZLBQQm8NmE8NppBM7sE/view?usp=sharing",
+    image: kulinariaPage,
   },
 ];
