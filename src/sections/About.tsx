@@ -56,7 +56,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
-                desc="Drag to see the things that bring joy and inspiration to my life."
+                desc="Drag the blocks to see the things that bring joy and inspiration to my life."
                 className="px-6 pt-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
