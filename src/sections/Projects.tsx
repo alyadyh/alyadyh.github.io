@@ -37,7 +37,7 @@ export const ProjectsSection = () => {
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <p className="mt-4 md:mt-5 text-sm md:text-base text-white/50">{project.description}</p>
+                  <p className="mt-4 md:mt-5 text-sm md:text-base text-white/50 whitespace-pre-line">{project.description}</p>
                   <ul className="flex flex-row gap-4 md:gap-5 mt-4 md:mt-5">
                     {project.icons.map((icon, index) => (
                       <li
