@@ -1,8 +1,10 @@
 import eventRadarWebPage from "../assets/images/projects/event-radar-web.png";
+import eventRadarMobile from "../assets/images/projects/event-radar-mobile.png";
 import ibarberpalPage from "../assets/images/projects/ibarberpal.png";
 import kulinariaPage from "../assets/images/projects/kulinaria.png";
 import pokedexPage from "../assets/images/projects/pokedex.png";
 import amostMobile from "../assets/images/projects/amost.png";
+import jasarumahkuMobile from "../assets/images/projects/jasarumahku.png";
 import loneslyscapeAR from "../assets/images/projects/lonelyscape.png";
 
 import NativewindIcon from "../assets/icons/nativewind-logo.svg";
@@ -36,7 +38,7 @@ export const portfolioProjects = [
     company: "Full Stack Developer",
     year: "2025",
     title: "AMOST",
-    description: `AMOST stands for <i>Ayo Minum Obat Secara Teratur</i> (Let's Take Medicine Regularly). It's an Android application that helps individuals take their medicine according to the instructions of medical personnel or even self-medication practices.`,
+    description: `AMOST stands for <i>Ayo Minum Obat Secara Teratur</i> (Let's Take Medicine Regularly). It is an Android application that helps individuals take their medicine according to the instructions of medical personnel or even self-medication practices.`,
     icons: [
       { title: "React Native", iconType: SiReact },
       { title: "NativeWind", iconType: NativewindIcon },
@@ -81,9 +83,9 @@ export const portfolioProjects = [
   {
     company: "Front-end Developer",
     year: "2023",
-    title: "EventRadar",
+    title: "EventRadar Web",
     description:
-      "EventRadar is a student website to democratize youth event information ranging from webinars and competitions.",
+      "EventRadar is a student-driven platform that broadens access to information on youth events, from webinars to competitions, website version.",
     icons: [
       { title: "NodeJS", iconType: SiNodedotjs },
       { title: "Bootstrap", iconType: SiBootstrap },
@@ -122,5 +124,25 @@ export const portfolioProjects = [
     ],
     link: "https://drive.google.com/file/d/1GxhfrABnqeXqkZLBQQm8NmE8NppBM7sE/view?usp=sharing",
     image: kulinariaPage,
+  },
+  {
+    company: "UI/UX Designer",
+    year: "2024",
+    title: "JasaRumahku",
+    description:
+      "JasaRumahku is a platform that connects homeowners with trusted service providers for home improvement and maintenance tasks.",
+    icons: [{ title: "Figma", iconType: SiFigma }],
+    link: "https://www.figma.com/proto/43pJXFnsZ6IwalYxBUJ1ul/JasaRumahku?node-id=0-1&p=f&t=0XeGsjJotXABAvSX-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=490%3A865&show-proto-sidebar=1",
+    image: jasarumahkuMobile,
+  },
+  {
+    company: "UI/UX Designer",
+    year: "2023",
+    title: "EventRadar Mobile",
+    description:
+      "EventRadar is a student-driven platform that broadens access to information on youth events, from webinars to competitions, mobile version.",
+    icons: [{ title: "Figma", iconType: SiFigma }],
+    link: "https://www.figma.com/proto/ebNy76GRXGFvtxktHEb2jR/EventRadar-Mobile-Copy?node-id=84-640&p=f&t=qyR73UOqaVX3cp80-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=114%3A618&show-proto-sidebar=1",
+    image: eventRadarMobile,
   },
 ];
