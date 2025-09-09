@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // Required if deploying to GitHub Pages
   output: "export",
   basePath: "/alyadyh.github.io",
+  assetPrefix: "/alyadyh.github.io/",
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports
