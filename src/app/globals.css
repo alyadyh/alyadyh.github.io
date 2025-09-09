@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Design tokens (v4) */
+@theme {
+  /* Breakpoints (optional, if you actually use them) */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1200px;
+
+  /* Fonts if you reference them as var(--font-sans/serif) */
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  /* Custom animations (this is how v4 registers animate-* utilities) */
+  --animate-move-left: move-left 1s linear infinite;
+  --animate-move-right: move-right 1s linear infinite;
+}
+
+/* Keyframes (regular CSS) */
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@layer base {
+  .nav-item {
+    @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+  }
+
+  .hero-ring {
+    @apply absolute inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-purple-300/5 shadow-[0_0_80px_inset] shadow-purple-300/5;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 md:px-8 lg:max-w-5xl;
+  }
+}
