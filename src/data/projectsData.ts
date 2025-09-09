@@ -6,8 +6,6 @@ import amostMobile from "../assets/images/projects/amost.png";
 import loneslyscapeAR from "../assets/images/projects/lonelyscape.png";
 
 import NativewindIcon from "../assets/icons/nativewind-logo.svg";
-// import ReactNativeIcon from "../assets/icons/react-native-logo.svg";
-import ReactNativeIcon from "../assets/icons/reactnative-logo.svg";
 
 import {
   SiBootstrap,
