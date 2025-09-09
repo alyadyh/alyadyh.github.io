@@ -13,24 +13,30 @@ import {
   SiUnity,
   SiVuedotjs,
   SiDotnet,
+  SiAsana,
+  SiXampp,
+  SiPhp,
 } from "@icons-pack/react-simple-icons";
 
 export const toolboxItems = [
-  { title: "JavaScript", iconType: SiJavascript },
-  { title: "TypeScript", iconType: SiTypescript },
-  { title: "React", iconType: SiReact },
+  { title: "React.js", iconType: SiReact },
   { title: "Next.js", iconType: SiNextdotjs },
   { title: "Vue.js", iconType: SiVuedotjs },
   { title: "React Native", iconType: SiReact },
+  { title: "JavaScript", iconType: SiJavascript },
+  { title: "TypeScript", iconType: SiTypescript },
   { title: "Tailwind CSS", iconType: SiTailwindcss },
   { title: "Bootstrap", iconType: SiBootstrap },
   { title: "Supabase", iconType: SiSupabase },
   { title: "PostgreSQL", iconType: SiPostgresql },
+  { title: "XAMPP", iconType: SiXampp },
+  { title: "PHP", iconType: SiPhp },
   { title: ".NET", iconType: SiDotnet },
   { title: "Android Studio", iconType: SiAndroidstudio },
   { title: "Docker", iconType: SiDocker },
   { title: "Figma", iconType: SiFigma },
   { title: "Unity", iconType: SiUnity },
+  { title: "Asana", iconType: SiAsana },
 ];
 
 export const hobbies = [
