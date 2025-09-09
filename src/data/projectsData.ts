@@ -30,6 +30,7 @@ import {
   SiExpo,
   SiNextdotjs,
   SiSupabase,
+  SiVercel,
 } from "@icons-pack/react-simple-icons";
 
 export const portfolioProjects = [
@@ -37,14 +38,13 @@ export const portfolioProjects = [
     company: "Full Stack Developer",
     year: "2025",
     title: "AMOST",
-    description:
-      "AMOST is a web application that allows users to create, read, update, and delete Pokémon data in an interactive digital Pokédex, also .",
+    description: `AMOST stands for <i>Ayo Minum Obat Secara Teratur</i> (Let's Take Medicine Regularly). It's an Android application that helps individuals take their medicine according to the instructions of medical personnel or even self-medication practices.`,
     icons: [
-      { title: "React Native", iconType: ReactNativeIcon },
+      { title: "React Native", iconType: SiReact },
       { title: "NativeWind", iconType: NativewindIcon },
       { title: "TypeScript", iconType: SiTypescript },
-      { title: "Expo Dev", iconType: SiExpo },
       { title: "Supabase", iconType: SiSupabase },
+      { title: "Expo Dev", iconType: SiExpo },
     ],
     link: "https://drive.google.com/file/d/1lwtB8ZWmr5ds7MDLFqnF4EFWFuEgpzaX/view?usp=sharing",
     image: amostMobile,
@@ -53,10 +53,10 @@ export const portfolioProjects = [
     company: "Project Manager",
     year: "2023",
     title: "LonelyScape AR",
-    description: `LonelyScape AR is an an escape room game application using Augmented Reality (AR) technology. The method used in developing AR Escape Room: LonelyScape is Rapid Application Development (RAD).
+    description: `LonelyScape AR is an escape room game app using Augmented Reality technology. The method used in developing this app is Rapid Application Development (RAD).
 
       Paper published in ICIMTech 2023
-      DOI: 10.1109/ICIMTech59029.2023.10277954`,
+      DOI:10.1109/ICIMTech59029.2023.10277954`,
     icons: [
       { title: "Asana", iconType: SiAsana },
       { title: "Figma", iconType: SiFigma },
@@ -69,12 +69,13 @@ export const portfolioProjects = [
     year: "2024",
     title: "Pokedex",
     description:
-      "Pokédex is a web application that allows users to create, read, update, and delete Pokémon data in an interactive digital Pokédex, also .",
+      "Pokédex is a web application that allows users to perform CRUD operations on Pokémon data in an interactive digital Pokédex.",
     icons: [
       { title: "NextJS", iconType: SiNextdotjs },
       { title: "Router DOM", iconType: SiReactrouter },
       { title: "MUI", iconType: SiMui },
       { title: "TypeScript", iconType: SiTypescript },
+      { title: "Vercel", iconType: SiVercel },
     ],
     link: "https://drive.google.com/file/d/17MLu59GXWoaj5B4mHKtSMSlnafTmggmc/view?usp=sharing",
     image: pokedexPage,
