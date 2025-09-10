@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { SectionHeader } from "../components/SectionHeader";
-import { Card } from "../components/Card";
-import { portfolioProjects } from "../data/projectsData";
-import { TechProjectIcon } from "../components/TechIcon";
+import { SectionHeader } from "@/components/SectionHeader";
+import { Card } from "@/components/Card";
+import { portfolioProjects } from "@/data/projectsData";
+import { TechProjectIcon } from "@/components/TechIcon";
 
-export const ProjectsSection = () => {
+export default function ProjectsSection() {
   return (
     <section id="projects" className="pb-20 lg:py-28 relative">
       {/* Sentinel for intersection observer */}

@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 import { twMerge } from "tailwind-merge";
-import grainImage from "../assets/images/grain.jpg";
+import grainImage from "@/assets/images/grain.jpg";
 
 export const Card = ({
   className,

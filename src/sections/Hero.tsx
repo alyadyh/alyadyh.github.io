@@ -6,7 +6,7 @@ import { ArrowDown, HeartHandshake } from "lucide-react";
 import { HeroBackground } from "../components/HeroBackground";
 import { TypeAnimation } from "react-type-animation";
 
-export const HeroSection = () => {
+export default function HeroSection() {
   return (
     <section
       id="home"

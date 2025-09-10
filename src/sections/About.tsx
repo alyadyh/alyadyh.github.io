@@ -2,17 +2,17 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { Card } from "../components/Card";
-import { SectionHeader } from "../components/SectionHeader";
-import { CardHeader } from "../components/CardHeader";
-import { ToolboxItems } from "../components/ToolboxItems";
-import { toolboxItems, hobbies } from "../data/aboutData";
-import bookImage from "../assets/images/book-cover.png";
-import mapImage from "../assets/images/map.png";
-import smileMemoji from "../assets/images/smile-memoji.png";
+import { Card } from "@/components/Card";
+import { SectionHeader } from "@/components/SectionHeader";
+import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
+import { toolboxItems, hobbies } from "@/data/aboutData";
+import bookImage from "@/assets/images/book-cover.png";
+import mapImage from "@/assets/images/map.png";
+import smileMemoji from "@/assets/images/smile-memoji.png";
 import { motion } from "framer-motion";
 
-export const AboutSection = () => {
+export default function AboutSection() {
   const constraintRef = useRef(null);
 
   return (

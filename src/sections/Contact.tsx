@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
-import grainImage from "../assets/images/grain.jpg";
+import grainImage from "@/assets/images/grain.jpg";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-export const ContactSection = () => {
+export default function ContactSection() {
   return (
     <section id="contact" className="py-16 pt-14 lg:py-24 lg:pt-20">
       <div className="container">

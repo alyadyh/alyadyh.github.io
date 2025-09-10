@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { TechIcon } from "../components/TechIcon";
+import { TechIcon } from "@/components/TechIcon";
 
 export const ToolboxItems = ({
   items,

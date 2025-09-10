@@ -1,13 +1,13 @@
-import eventRadarWebPage from "../assets/images/projects/event-radar-web.png";
-import eventRadarMobile from "../assets/images/projects/event-radar-mobile.png";
-import ibarberpalPage from "../assets/images/projects/ibarberpal.png";
-import kulinariaPage from "../assets/images/projects/kulinaria.png";
-import pokedexPage from "../assets/images/projects/pokedex.png";
-import amostMobile from "../assets/images/projects/amost.png";
-import jasarumahkuMobile from "../assets/images/projects/jasarumahku.png";
-import loneslyscapeAR from "../assets/images/projects/lonelyscape.png";
+import eventRadarWebPage from "@/assets/images/projects/event-radar-web.png";
+import eventRadarMobile from "@/assets/images/projects/event-radar-mobile.png";
+import ibarberpalPage from "@/assets/images/projects/ibarberpal.png";
+import kulinariaPage from "@/assets/images/projects/kulinaria.png";
+import pokedexPage from "@/assets/images/projects/pokedex.png";
+import amostMobile from "@/assets/images/projects/amost.png";
+import jasarumahkuMobile from "@/assets/images/projects/jasarumahku.png";
+import loneslyscapeAR from "@/assets/images/projects/lonelyscape.png";
 
-import NativewindIcon from "../assets/icons/nativewind-logo.svg";
+import NativewindIcon from "@/assets/icons/nativewind-logo.svg";
 
 import {
   SiBootstrap,

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const sections = ["home", "about", "projects", "contact"];
 
-export const Header = () => {
+export default function Header() {
   const [active, setActive] = useState("home");
 
   useEffect(() => {
