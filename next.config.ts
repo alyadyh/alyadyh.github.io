@@ -1,14 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find(
-      (rule) =>
+      (rule: any) =>
         typeof rule !== "string" &&
         rule.test instanceof RegExp &&
         rule.test.test(".svg")
-    ) as any;
+    );
 
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url
