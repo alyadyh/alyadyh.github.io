@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import memojiImage from "../assets/images/memoji-computer.png";
@@ -41,12 +41,7 @@ export default function HeroSection() {
               <div className="text-2xl md:text-4xl text-center uppercase font-bold">
                 <span className="text-white/60 mr-2">a</span>
                 <TypeAnimation
-                  sequence={[
-                    "Developer",
-                    2000,
-                    "Designer",
-                    2000,
-                  ]}
+                  sequence={["Developer", 2000, "Designer", 2000]}
                   wrapper="span"
                   speed={50}
                   repeat={Infinity}
@@ -75,4 +70,4 @@ export default function HeroSection() {
       </div>
     </section>
   );
-};
+}

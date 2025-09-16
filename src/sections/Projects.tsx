@@ -37,24 +37,18 @@ export default function ProjectsSection() {
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <p 
+                  <p
                     className="mt-4 md:mt-5 text-sm md:text-base text-white/50 whitespace-pre-line"
                     dangerouslySetInnerHTML={{ __html: project.description }}
                   />
                   <ul className="flex flex-row gap-4 md:gap-5 mt-4 md:mt-5">
                     {project.icons.map((icon, index) => (
-                      <li
-                        key={index}
-                        className="flex text-sm md:text-base"
-                      >
+                      <li key={index} className="flex text-sm md:text-base">
                         <TechProjectIcon component={icon.iconType} />
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                  >
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 hover:bg-purple-300/50 active:bg-purple-300/50 hover:text-white active:text-white cursor-pointer border border-white">
                       <span>View Project</span>
                       <ArrowUpRight size={16} />
@@ -75,4 +69,4 @@ export default function ProjectsSection() {
       </div>
     </section>
   );
-};
+}
