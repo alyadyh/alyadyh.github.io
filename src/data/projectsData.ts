@@ -35,7 +35,7 @@ import {
 
 export const portfolioProjects = [
   {
-    company: "Full Stack Developer",
+    company: "App Developer",
     year: "2025",
     title: "AMOST",
     description: `AMOST stands for <i>Ayo Minum Obat Secara Teratur</i> (Let's Take Medicine Regularly). It is an Android application that helps individuals take their medicine according to the instructions of medical personnel or even self-medication practices.`,
