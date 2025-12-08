@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import grainImage from "@/assets/images/grain.jpg";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+// import cv from "@/assets/documents/resume.pdf";
 
 export default function ContactSection() {
   return (
@@ -24,6 +25,9 @@ export default function ContactSection() {
                 </p>
               </div>
               <div className="flex mt-4 gap-4 justify-center md:justify-start">
+                <a href="mailto:alya.mdyh@gmail.com?subject=Hello Alya!" target="_blank">
+                  <FaEnvelope size={30} className="hover:text-purple-700" />
+                </a>
                 <a
                   href="https://linkedin.com/in/alya-mardhiyyah/"
                   target="_blank"
@@ -39,9 +43,9 @@ export default function ContactSection() {
               </div>
             </div>
             <div>
-              <a href="mailto:alya.mdyh@gmail.com?subject=Hello Alya!">
+              <a href="/documents/resume.pdf" target="_blank">
                 <button className="text-white bg-gray-900 hover:bg-purple-300/50 active:bg-purple-300/50 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max cursor-pointer border border-gray-900/50 hover:border-white active:border-white">
-                  <span className="font-semibold">Reach Me Out</span>
+                  <span className="font-semibold">Check out my CV</span>
                   <ArrowUpRight size={16} />
                 </button>
               </a>
