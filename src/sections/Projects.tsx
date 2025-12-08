@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { portfolioProjects } from "@/data/projectsData";
 import { TechProjectIcon } from "@/components/TechIcon";
+import { Tooltip } from "@/components/Tooltip";
 
 export default function ProjectsSection() {
   return (
@@ -44,7 +45,9 @@ export default function ProjectsSection() {
                   <ul className="flex flex-row gap-4 md:gap-5 mt-4 md:mt-5">
                     {project.icons.map((icon, index) => (
                       <li key={index} className="flex text-sm md:text-base">
-                        <TechProjectIcon component={icon.iconType} />
+                        <Tooltip label={icon.title}>
+                          <TechProjectIcon component={icon.iconType} />
+                        </Tooltip>
                       </li>
                     ))}
                   </ul>
